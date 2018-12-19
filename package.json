@@ -1,0 +1,17 @@
+{
+  "name": "node-command-engine",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "start": "yarn build && node dist/server.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.9",
+    "reflect-metadata": "^0.1.12",
+    "tslib": "^1.9.3",
+    "typescript": "^3.1.6"
+  }
+}
