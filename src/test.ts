@@ -45,10 +45,12 @@ export class Test {
 
 export class EventSourcing {
   @Listen(ListenerType.ALL, 100000)
-  public async doSomething2(command: CreateUserCommand, next: Function): Promise<void> {
+  public async doSomething2(command: CreateUserCommand, next: Function): Promise<string> {
     try {
-      console.log('LOGAR COMANDO')
+      console.log('LOGAR COMANDO');
       await next();
+
+      return 'logou!';
     } catch (e) {
       throw e;
     }
